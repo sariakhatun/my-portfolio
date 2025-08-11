@@ -2,19 +2,15 @@
 @plugin "daisyui";
 
 @theme{
-  --color-border : hsl(var(--border));
-  --color-background : hsl(var(--background));
-  --color-foreground : hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
 
-
-  /* --color-primary: var(--primary); */
-  --color-primary: rgb(var(--primary) / <alpha-value>);
+  --color-primary: var(--primary); /* just use the hex value directly */
 
   --color-primary-foreground: hsl(var(--primary-foreground));
 
-
-    --color-card: hsl(var(--card));
-
+  --color-card: hsl(var(--card));
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
@@ -24,8 +20,6 @@
   --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forwards;
   --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
   --animate-meteor: meteor 5s linear infinite;
-
-
 
   @keyframes float {
     0%,
@@ -72,29 +66,58 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
 
-    --card: 0 0% 100%;
+  --card: 0 0% 100%;
 
-    --primary: #8c52ff;
-    --primary-foreground: 210 40% 98%;
+  --primary: #8c52ff; /* <-- hex value */
+  --primary-foreground: 210 40% 98%;
 
-    --border: 214 32% 91%;
-  }
+  --border: 214 32% 91%;
+}
 
-  .dark {
-    --background: 222 47% 4%;
-    --foreground: 213 31% 91%;
+.dark {
+  --background: 222 47% 4%;
+  --foreground: 213 31% 91%;
 
-    --card: 222 47% 8%;
+  --card: 222 47% 8%;
 
-        --primary: #8c52ff;
+  --primary: #8c52ff; /* hex value */
+  --primary-foreground: 213 31% 91%;
 
-    --primary-foreground: 213 31% 91%;
+  --border: 217 33% 20%;
+}
+/* Image shadow with adaptive colors */
+.image-shadow {
+  box-shadow: 0 10px 15px -3px rgba(140, 82, 255, 0.5);
+  transition: box-shadow 0.3s ease;
+  border-radius: 9999px; /* rounded-full */
+}
 
-    --border: 217 33% 20%;
-  }
+.image-shadow:hover {
+  box-shadow: 0 20px 30px -10px rgba(140, 82, 255, 0.7);
+}
+
+.dark .image-shadow {
+  box-shadow: 0 10px 15px -3px rgba(140, 82, 255, 0.8);
+}
+
+.dark .image-shadow:hover {
+  box-shadow: 0 20px 30px -10px rgba(140, 82, 255, 1);
+}
+
+/* Social icons hover with theme primary color */
+.social-icon {
+  transition: color 0.3s ease;
+  color: inherit;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: hsl(var(--primary));
+}
+
 
   * {
     @apply border-border;
@@ -162,7 +185,6 @@
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
-  
 
 #root {
   max-width: 100%;
@@ -170,4 +192,3 @@
   padding: 0;
   text-align: center;
 }
-
