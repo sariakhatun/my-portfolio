@@ -13,7 +13,6 @@ import {
   FaFigma,
 } from "react-icons/fa";
 import { SiFirebase, SiTailwindcss, SiExpress } from "react-icons/si";
-import { div } from "framer-motion/client";
 
 const skills = [
   { icon: <FaHtml5 className="text-orange-600 text-5xl" />, name: "HTML", desc: "Semantic structure for web pages." },
@@ -32,9 +31,13 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <div id="skills" className=" flex items-center justify-center px-4md:mt-0 lg:mt-0 pb-12">
+    <div id="skills" className=" flex items-center justify-center px-4 md:mt-0 lg:mt-0 pb-12">
         <section 
-      className="py-12  mt-12  rounded-2xl shadow-2xl px-6 transition-colors duration-300 max-w-7xl w-full "
+      className="py-12  mt-12  rounded-2xl shadow-2xl px-4 transition-colors duration-300 max-w-7xl mx-auto w-full "
+      style={{
+          backgroundColor: "hsl(var(--card))",
+          border: "1px solid hsl(var(--border))",
+        }}
     >
       <h2 className="text-3xl font-bold text-center mb-8 text-foreground">
         My <span className="text-[#8c52ff]">Skills</span>

@@ -6,6 +6,8 @@ import Navbar1 from "../Components/Navbar1";
 import HeroSection from "./HeroSection";
 import AboutMe from "./AboutMe";
 import SkillsSection from "./SkillsSection ";
+import ProjectsSection from "./ProjectsSection ";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -23,6 +25,8 @@ const Home = () => {
         <HeroSection />
         <AboutMe></AboutMe>
         <SkillsSection></SkillsSection>
+        <ProjectsSection></ProjectsSection>
+       <Contact></Contact>
       </div>
 
       {/* Footer */}
