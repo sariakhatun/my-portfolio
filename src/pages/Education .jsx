@@ -52,12 +52,12 @@ const Education = () => {
                    flex flex-col sm:flex-row items-center lg:gap-2 mb-2 mt-2"
       >
         <FaGraduationCap className="-mt-6 lg:mt-0 mb-2 sm:mb-0" size={35} />
-        <span>Bachelor of Science in Computer Science and Engineering</span>
+        <span>Bachelor of Science in Institute Of Information Technology</span>
       </h3>
       <p className="font-bold text-[hsl(var(--primary))] mt-1">
         Jahangirnagar University
       </p>
-      <p className="text-foreground mt-1">2025 – Expected Graduation: 2029</p>
+      <p className="text-foreground mt-1">2025 – Expected Graduation: 2027</p>
       <p className="text-foreground mt-1 font-semibold">
         Last Semester CGPA: <span className="text-[#8c52ff]">3.97</span>
       </p>
@@ -65,7 +65,7 @@ const Education = () => {
   </div>
 
   <p className="mb-4 text-foreground leading-relaxed">
-    Currently pursuing a Bachelor's in Computer Science and Engineering.
+    Currently pursuing a Bachelor's in Institute Of Information Technology (Software Engineering).
     Passionate about software development, web technologies, and problem-solving.
     Actively learning full-stack web development and participating in coding challenges.
   </p>
