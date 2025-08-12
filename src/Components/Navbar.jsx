@@ -87,8 +87,8 @@ const Navbar = () => {
               className="h-8 w-8 lg:h-12 lg:w-12 rounded-full bg-background/80 "
             />
             <a className="font-bold text-primary flex items-center" href="#hero">
-              <span className="relative z-10 text-base md:text-xl lg:text-2xl">
-                <span className="text-glow text-foreground ">Saria</span>Creates
+              <span className="relative z-10 text-base md:text-xl lg:text-2xl text-foreground">Saria
+                <span className="text-glow  text-[#8c52ff]   ">Creates</span>
               </span>
             </a>
           </div>
