@@ -1,6 +1,6 @@
 import React from "react";
 import JUlogo from "../assets/ju.png";
-import HSCLogo from "../assets/ju.png";
+import HSCLogo from "../assets/school.png";
 import { FaGraduationCap } from "react-icons/fa";
 
 const Education = () => {
@@ -8,19 +8,19 @@ const Education = () => {
     <div
       id="education"
       className="max-w-7xl mx-auto px-6 py-12"
-      style={{ fontFamily: "'Fredoka One', cursive" }}
+     
     >
       <section
         className="scroll-mt-[100px] py-16 md:px-10 rounded-2xl shadow-2xl px-6 max-w-7xl mx-auto w-full
                    bg-[hsl(var(--card))] border-[1px] border-[hsl(var(--border))] transition-colors duration-300"
       >
         <h2
-          className="text-4xl font-bold mb-16 text-center text-[hsl(var(--foreground))]"
+          className="text-4xl font-bold mb-16 text-center "
         >
-          Education Journey
+          Education <span className="text-[#8c52ff]">Journey</span>
         </h2>
 
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-16"  style={{ fontFamily: "'Fredoka One', cursive" }}>
           {/* Jahangirnagar University Card */}
           <div
   className="relative rounded-xl p-10 cursor-default card-hover
